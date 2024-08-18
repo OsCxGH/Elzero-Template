@@ -1579,11 +1579,12 @@ ul {
 }
 /* Top Videos Section @media Queries */
 
-.videos .content .video-player .img:hover .options {
-	visibility: visible;
-	opacity: 100%;
+@media (min-width: 992px) {
+	.videos .content .video-player .img:hover .options {
+		visibility: visible;
+		opacity: 100%;
+	}
 }
-
 @media (max-width: 991px) {
 	.videos .content {
 		flex-direction: column;
