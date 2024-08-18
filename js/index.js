@@ -68,6 +68,7 @@ window.onload = () => {
 	}
 };
 
+/*
 let days = document.querySelector(".days > span.count");
 let hours = document.querySelector(".hours > span.count");
 let minutes = document.querySelector(".minutes > span.count");
@@ -95,3 +96,4 @@ let eventCounter = setInterval(() => {
 		}
 	}
 }, 1000);
+*/
