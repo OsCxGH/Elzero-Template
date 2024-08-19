@@ -9,7 +9,8 @@
 	--primaryColor: #2196f3;
 	--secondaryColor: #0069be;
 	--secondaryBackgroundColor: #eeeeee;
-	--textColor: #1f2021;
+	--primaryTextColor: #1f2021;
+	--secondaryTextColor: #777;
 	--titleFontSize: 20px;
 	--titleFontWeight: 600;
 	--borderRadiusSize: 8px;
@@ -80,7 +81,7 @@ ul {
 }
 .section-title {
 	position: relative;
-	color: var(--textColor);
+	color: var(--primaryTextColor);
 	width: fit-content;
 	padding: 15px 25px;
 	margin: 0 auto 50px;
@@ -88,7 +89,7 @@ ul {
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
-	border: 4px solid var(--textColor);
+	border: 4px solid var(--primaryTextColor);
 	cursor: pointer;
 	transition-duration: 0.3s;
 }
@@ -164,7 +165,6 @@ ul {
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	padding: 0 10px;
 	border-radius: 5px;
 }
 .header .content .logo {
@@ -245,7 +245,7 @@ ul {
 	cursor: pointer;
 }
 .header .content .nav-bar .link > a {
-	color: var(--textColor);
+	color: var(--primaryTextColor);
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -415,11 +415,13 @@ ul {
 	animation: hop 1s linear alternate infinite;
 }
 .landing .content .text .title {
+	color: var(--primaryTextColor);
 	font-size: 40px;
 	text-transform: capitalize;
 	margin: 0;
 }
 .landing .content .text .quote {
+	color: var(--secondaryTextColor);
 	font-size: 20px;
 	width: 75%;
 	line-height: 1.6;
@@ -479,11 +481,13 @@ ul {
 	border-top-left-radius: var(--borderRadiusSize);
 }
 .articles .content > div .article-title {
+	color: var(--primaryTextColor);
 	font-size: 20px;
 	text-transform: capitalize;
 	padding: 0 20px;
 }
 .articles .content > div .article-text {
+	color: var(--secondaryTextColor);
 	font-size: 14px;
 	line-height: 1.6;
 	padding: 0 20px;
@@ -618,6 +622,7 @@ ul {
 	border-width: 170px 500px 243px 0;
 }
 .features .content > div .feature {
+	color: var(--primaryTextColor);
 	position: relative;
 	font-size: 32px;
 	font-weight: 700;
@@ -633,6 +638,7 @@ ul {
 	border-bottom: 5px solid var(--featureColor);
 }
 .features .content > div .feature-description {
+	color: var(--secondaryTextColor);
 	padding: 25px;
 	line-height: 2;
 	font-weight: 600;
@@ -706,6 +712,7 @@ ul {
 	border-radius: 50%;
 }
 .testimonials .content > div .member-name {
+	color: var(--primaryTextColor);
 	font-size: 20px;
 	text-transform: capitalize;
 	margin-top: 20px;
@@ -718,7 +725,7 @@ ul {
 	color: #ffc800;
 }
 .testimonials .content > div .testimonial {
-	color: var(--textColor);
+	color: var(--secondaryTextColor);
 	font-size: 14px;
 	line-height: 1.6;
 }
@@ -805,10 +812,10 @@ ul {
 	transition: 0.3s;
 }
 .team-members .content .member:hover .about-member .member-name {
-	color: var(--textColor);
+	color: var(--primaryTextColor);
 }
 .team-members .content .member .about-member .member-description {
-	color: var(--textColor);
+	color: var(--secondaryTextColor);
 	text-transform: capitalize;
 	font-size: 14px;
 }
@@ -960,6 +967,7 @@ ul {
 	flex-direction: column;
 }
 .skills .content .skill-info .skill-name {
+	color: var(--primaryTextColor);
 	font-size: 18px;
 	font-weight: 700;
 }
@@ -1060,11 +1068,12 @@ ul {
 	padding: 0 30px;
 }
 .work-steps .content .steps .step .text .step-name {
+	color: var(--primaryTextColor);
 	font-size: 20px;
 	text-transform: capitalize;
 }
 .work-steps .content .steps .step .text .step-description {
-	color: var(--textColor);
+	color: var(--secondaryTextColor);
 	line-height: 1.6;
 	font-size: 15px;
 }
@@ -1121,7 +1130,7 @@ ul {
 	padding: 20px 0;
 }
 .events .content .event-info .counter > div .name {
-	color: var(--textColor);
+	color: var(--primaryTextColor);
 	font-size: 12px;
 	font-weight: 600;
 	text-transform: capitalize;
@@ -1142,12 +1151,13 @@ ul {
 	width: 80%;
 }
 .events .content .event-info .text .event-name {
+	color: var(--primaryTextColor);
 	font-size: 28px;
 	text-transform: capitalize;
 	margin: 40px 0 30px;
 }
 .events .content .event-info .text .event-description {
-	color: #555;
+	color: var(--secondaryTextColor);
 	line-height: 2;
 }
 .events .subscribe-form > form {
@@ -1162,7 +1172,7 @@ ul {
 	border-radius: 55px;
 }
 .events .subscribe-form #email {
-	color: var(--textColor);
+	color: var(--primaryTextColor);
 	width: 65%;
 	padding-left: 20px;
 }
@@ -1295,6 +1305,7 @@ ul {
 	transform: skewX(-45deg);
 }
 .plans .content .plan .plan-name {
+	color: var(--primaryTextColor);
 	font-size: 20px;
 	font-weight: 700;
 	padding: 10px 0;
@@ -1327,7 +1338,7 @@ ul {
 	width: 100%;
 }
 .plans .content .plan .plan-features .feature {
-	color: var(--textColor);
+	color: var(--secondaryTextColor);
 	margin: 0;
 	padding: 20px;
 	font-size: 14px;
@@ -1420,7 +1431,7 @@ ul {
 	margin: 0;
 }
 .videos .content .playlist .video .video-name {
-	color: var(--textColor);
+	color: var(--primaryTextColor);
 	text-transform: capitalize;
 	margin-bottom: 15px;
 	transition: 0.3s;
@@ -1429,7 +1440,7 @@ ul {
 	color: var(--primaryColor);
 }
 .videos .content .playlist .video .video-length {
-	color: #969696;
+	color: var(--secondaryTextColor);
 }
 .videos .content .video-player {
 	background-color: #ddd;
@@ -1442,7 +1453,7 @@ ul {
 }
 .videos .content .video-player .now-playing {
 	background-color: #fff;
-	color: var(--textColor);
+	color: var(--primaryTextColor);
 	padding: 25px;
 	margin: 10px 0 0;
 	text-transform: capitalize;
@@ -1610,6 +1621,7 @@ ul {
 	height: 100%;
 }
 .stats .stats-title {
+	color: var(--primaryTextColor);
 	position: relative;
 	margin: 50px auto;
 	width: fit-content;
@@ -1663,6 +1675,7 @@ ul {
 	font-size: 30px;
 }
 .stats .content > div .stat-num {
+	color: var(--primaryTextColor);
 	margin: 20px 0;
 	font-size: 45px;
 	font-weight: 700;
@@ -1720,13 +1733,13 @@ ul {
 	animation: switch-background 10s infinite;
 }
 .discount .info .title {
-	font-size: 30px;
+	color: var(--primaryTextColor);
+	font-size: 36px;
 	font-weight: 700;
 	text-transform: capitalize;
 	margin: 0;
 }
 .discount .info .description {
-	font-size: 14px;
 	line-height: 1.6;
 }
 .discount .info > img {
@@ -1740,7 +1753,7 @@ ul {
 	width: 50%;
 }
 .discount .form .request {
-	font-size: 33px;
+	font-size: 36px;
 	font-weight: 700;
 	text-transform: capitalize;
 	text-align: center;
@@ -1792,7 +1805,7 @@ ul {
 /* Discount Section Styling End */
 /* Footer Styling Start */
 .footer {
-	background-color: var(--textColor);
+	background-color: var(--primaryTextColor);
 }
 .footer .content {
 	color: #ccc;
@@ -1850,6 +1863,7 @@ ul {
 	transition: 0.3s;
 }
 .footer .content .box-2 > a:hover {
+	color: #fff;
 	padding-left: 10px;
 }
 .footer .content .box-2 > a:not(:last-of-type) {
