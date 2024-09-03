@@ -153,6 +153,23 @@ ul {
 		linear-gradient(225deg, #fff 25%, transparent 25%);
 	background-size: 25px 25px;
 }
+.scroll-to-top {
+	background-color: var(--primaryColor);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: var(--borderRadiusSize);
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+	z-index: 5;
+}
 /* Global Rules End */
 /* Header Styling Start */
 .header {
@@ -257,17 +274,17 @@ ul {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	width: 70px;
-	height: 35px;
+	width: 72px;
+	height: 36px;
 	padding: 10px;
 	border: none;
 	border-radius: 18px;
 	cursor: pointer;
-	transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .content .nav-bar .appearance .appearance-menu .theme-mode > i {
-	transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header
 	.content
@@ -284,10 +301,10 @@ ul {
 	position: absolute;
 	top: 3px;
 	left: 3px;
-	width: 29px;
-	height: 29px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
-	transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header
 	.content
@@ -297,7 +314,7 @@ ul {
 	.theme-mode
 	.theme-button
 	> i {
-	transition: 0.3s transform;
+	transition: 0.4s transform;
 }
 .header .content .nav-bar .link > a {
 	color: var(--primaryTextColor);

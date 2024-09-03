@@ -55,6 +55,21 @@ window.onload = () => {
 	}
 };
 
+let scrollToTop = document.querySelector(".scroll-to-top");
+scrollToTop.style.cssText = "visibility: hidden; opacity: 0%";
+
+window.onscroll = () => {
+	if (window.scrollY >= 2000)
+		scrollToTop.style.cssText = "visibility: visible; opacity: 100%";
+	else scrollToTop.style.cssText = "visibility: hidden; opacity: 0%";
+};
+scrollToTop.addEventListener("click", () => {
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	});
+});
+
 let appearanceIcon = document.querySelector("div.appearance > i.fa-fill-drip");
 let appearanceMenu = document.querySelector("div.appearance-menu");
 appearanceMenu.style.cssText = "visibility: hidden; opacity: 0%";
