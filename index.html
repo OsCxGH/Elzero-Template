@@ -931,8 +931,9 @@
 						<input
 							type="email"
 							placeholder="Enter your email"
-							name="E-Mail"
+							name="email"
 							id="email"
+							autocomplete="email"
 							required
 						/>
 						<input type="submit" value="Subscribe" id="subscribe" />
@@ -1107,28 +1108,32 @@
 				<form method="post">
 					<input
 						type="text"
-						name="Username"
+						name="full-name"
 						id="name"
+						autocomplete="name"
 						placeholder="Your name"
 						required
 					/>
 					<input
 						type="email"
-						name="E-Mail"
+						name="email"
 						id="email"
+						autocomplete="email"
 						placeholder="Your email"
 						required
 					/>
 					<input
 						type="tel"
-						name="Phone-Number"
+						name="phone-number"
 						id="phone"
+						autocomplete="tel"
 						placeholder="Your phone"
 						required
 					/>
 					<textarea
 						name="message"
 						id="message"
+						autocomplete="off"
 						placeholder="Tell us about your needs"
 						required
 					></textarea>

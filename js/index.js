@@ -44,11 +44,11 @@ window.onload = () => {
 				el.classList.add("active");
 			}
 		});
-		document.styleSheets[2].cssRules[1].style.setProperty(
+		document.styleSheets[2].cssRules[2].style.setProperty(
 			"--primaryColor",
 			window.localStorage.primaryColor
 		);
-		document.styleSheets[2].cssRules[1].style.setProperty(
+		document.styleSheets[2].cssRules[2].style.setProperty(
 			"--secondaryColor",
 			window.localStorage.secondaryColor
 		);
