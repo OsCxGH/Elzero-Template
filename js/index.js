@@ -22,11 +22,11 @@ color.forEach((el, i) => {
 				window.localStorage.setItem("currentColor", "blue");
 				break;
 		}
-		document.styleSheets[2].cssRules[1].style.setProperty(
+		document.styleSheets[2].cssRules[2].style.setProperty(
 			"--primaryColor",
 			window.localStorage.primaryColor
 		);
-		document.styleSheets[2].cssRules[1].style.setProperty(
+		document.styleSheets[2].cssRules[2].style.setProperty(
 			"--secondaryColor",
 			window.localStorage.secondaryColor
 		);
