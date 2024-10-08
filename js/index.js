@@ -97,7 +97,7 @@ themeMode.addEventListener("click", () => {
 		themeMode.classList.remove("light");
 		themeMode.classList.add("dark");
 		themeMode.style.backgroundColor = "#333855";
-		themeButton.style.cssText = "color: #333855; left: 38px";
+		themeButton.style.cssText = "color: #333855; left: 39px";
 		themeButtonIcon.style.transform = "scale(0)";
 		setTimeout(() => {
 			themeButtonIcon.classList.remove("bi-sun-fill");

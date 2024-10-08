@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 /* Global Rules Start  */
 * {
-	font-family: Cairo;
+	font-family: Cairo, "Open Sans", sans-serif;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -1684,7 +1684,7 @@ ul {
 /* Top Videos Section Styling End */
 /* Stats Section Styling Start */
 .stats .stats-background {
-	background-image: url(../images/stats.jpg);
+	background-image: url(../assets/stats.jpg);
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -1800,7 +1800,7 @@ ul {
 }
 .discount .info::after {
 	content: "";
-	background-image: url(../images/discount-background1.jpg);
+	background-image: url(../assets/discount-background1.jpg);
 	background-size: cover;
 	position: absolute;
 	width: 100%;
@@ -2051,10 +2051,10 @@ ul {
 }
 @keyframes switch-background {
 	50% {
-		background-image: url(../images/discount-background2.jpg);
+		background-image: url(../assets/discount-background2.jpg);
 	}
 	100% {
-		background-image: url(../images/discount-background1.jpg);
+		background-image: url(../assets/discount-background1.jpg);
 	}
 }
 /* Animations Styling End */
