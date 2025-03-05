@@ -130,7 +130,7 @@ let hours = document.querySelector(".hours > span.count");
 let minutes = document.querySelector(".minutes > span.count");
 let seconds = document.querySelector(".seconds > span.count");
 
-let eventDate = new Date("2024-12-31T00:00:00").getTime();
+let eventDate = new Date("2025-12-31T00:00:00").getTime();
 
 let counter = setInterval(() => {
 	let date = new Date().getTime();
