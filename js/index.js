@@ -130,7 +130,7 @@ let hours = document.querySelector(".hours > span.count");
 let minutes = document.querySelector(".minutes > span.count");
 let seconds = document.querySelector(".seconds > span.count");
 
-let eventDate = new Date("2025-12-31T00:00:00").getTime();
+let eventDate = new Date("2025-12-31T12:00:00").getTime();
 
 let counter = setInterval(() => {
 	let date = new Date().getTime();
@@ -141,10 +141,10 @@ let counter = setInterval(() => {
 	let minutesCount = Math.floor((diff % (60 * 60)) / 60);
 	let secondsCount = Math.floor(diff % 60);
 
-	days.textContent = daysCount < 10 ? `0${daysCount}` : daysCount;
-	hours.textContent = hoursCount < 10 ? `0${hoursCount}` : hoursCount;
-	minutes.textContent = minutesCount < 10 ? `0${minutesCount}` : minutesCount;
-	seconds.textContent = secondsCount < 10 ? `0${secondsCount}` : secondsCount;
+	days.textContent = daysCount < 10 ? `0${diff > 0 ? daysCount : 0}` : daysCount;
+	hours.textContent = hoursCount < 10 ? `0${diff > 0 ? hoursCount : 0}` : hoursCount;
+	minutes.textContent = minutesCount < 10 ? `0${diff > 0 ? minutesCount : 0}` : minutesCount;
+	seconds.textContent = secondsCount < 10 ? `0${diff > 0 ? secondsCount : 0}` : secondsCount;
 
-	diff === 0 ? clearInterval(counter) : "";
+	diff <= 0 ? clearInterval(counter) : "";
 }, 1000);
